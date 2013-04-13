@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ExampleProtocolView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <ExampleDelegate>
 
 @end

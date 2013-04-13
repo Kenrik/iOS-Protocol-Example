@@ -20,6 +20,8 @@
 		8477DD7D154F66FB008091BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8477DD5E154F66FA008091BE /* Foundation.framework */; };
 		8477DD85154F66FB008091BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8477DD83154F66FB008091BE /* InfoPlist.strings */; };
 		8477DD88154F66FB008091BE /* iOS_Protocol_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8477DD87154F66FB008091BE /* iOS_Protocol_ExampleTests.m */; };
+		84C57F67171910AD0010BBDA /* ExampleProtocolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C57F66171910AD0010BBDA /* ExampleProtocolView.m */; };
+		84C57F69171914360010BBDA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C57F68171914360010BBDA /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,9 @@
 		8477DD84154F66FB008091BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8477DD86154F66FB008091BE /* iOS_Protocol_ExampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOS_Protocol_ExampleTests.h; sourceTree = "<group>"; };
 		8477DD87154F66FB008091BE /* iOS_Protocol_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Protocol_ExampleTests.m; sourceTree = "<group>"; };
+		84C57F65171910AD0010BBDA /* ExampleProtocolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleProtocolView.h; sourceTree = "<group>"; };
+		84C57F66171910AD0010BBDA /* ExampleProtocolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleProtocolView.m; sourceTree = "<group>"; };
+		84C57F68171914360010BBDA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 		8477DD4D154F66FA008091BE = {
 			isa = PBXGroup;
 			children = (
+				84C57F68171914360010BBDA /* Default-568h@2x.png */,
 				8477DD62154F66FA008091BE /* iOS-Protocol-Example */,
 				8477DD80154F66FB008091BE /* iOS-Protocol-ExampleTests */,
 				8477DD5B154F66FA008091BE /* Frameworks */,
@@ -113,6 +119,8 @@
 			children = (
 				8477DD6B154F66FA008091BE /* AppDelegate.h */,
 				8477DD6C154F66FA008091BE /* AppDelegate.m */,
+				84C57F65171910AD0010BBDA /* ExampleProtocolView.h */,
+				84C57F66171910AD0010BBDA /* ExampleProtocolView.m */,
 				8477DD6E154F66FA008091BE /* ViewController.h */,
 				8477DD6F154F66FA008091BE /* ViewController.m */,
 				8477DD71154F66FA008091BE /* ViewController.xib */,
@@ -223,6 +231,7 @@
 			files = (
 				8477DD67154F66FA008091BE /* InfoPlist.strings in Resources */,
 				8477DD73154F66FA008091BE /* ViewController.xib in Resources */,
+				84C57F69171914360010BBDA /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 				8477DD69154F66FA008091BE /* main.m in Sources */,
 				8477DD6D154F66FA008091BE /* AppDelegate.m in Sources */,
 				8477DD70154F66FA008091BE /* ViewController.m in Sources */,
+				84C57F67171910AD0010BBDA /* ExampleProtocolView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +439,7 @@
 				8477DD8D154F66FB008091BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8477DD8E154F66FB008091BE /* Build configuration list for PBXNativeTarget "iOS-Protocol-ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +448,7 @@
 				8477DD90154F66FB008091BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

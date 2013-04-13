@@ -3,7 +3,6 @@
 //  iOS-Protocol-Example
 //
 //  Created by Kenrik March on 4/30/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -17,13 +16,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    ExampleProtocolView *exampleView = [[ExampleProtocolView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame)) withDelegate:self];
+    [self.view addSubview:exampleView];
 }
+
+
+-(void)requiredReturn:(id)sender {
+    
+    if ([sender isKindOfClass:[ExampleProtocolView class]]) {
+        
+        ExampleProtocolView *exampleView = (ExampleProtocolView *)sender;
+        
+        NSLog(exampleView.trueFalseValue ? @"Yes" : @"No");
+    }
+}
+
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
